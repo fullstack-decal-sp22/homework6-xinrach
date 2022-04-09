@@ -31,6 +31,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+
 app.get('/posts', (req, res) => {
   res.send(Object.values(data))
 })
